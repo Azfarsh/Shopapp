@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Food Safari</title>
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <!-- Inline CSS -->
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      color: #444;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+      background: #f0f0f0;
+    }
+
+    /* Navbar Styles */
+    .navbar {
+      background: linear-gradient(90deg, #ff8c00, #ff0080);
+      padding: 1rem;
+    }
+
+    .navbar-brand {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #fff;
+      font-family: 'Brush Script MT', cursive;
+    }
+
+    .navbar-brand:hover {
+      color: #ffedcc;
+    }
+
+    .navbar-nav .nav-link {
+      color: #fff;
+      font-weight: 500;
+      padding: 0.75rem 1rem;
+      text-transform: uppercase;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #ffedcc;
+      text-shadow: 1px 1px 5px #000;
+    }
+
+    /* Main Content Styles */
+    .content {
+      flex: 1;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #333;
+      text-align: center;
+      margin-top: 2rem;
+      font-family: 'Brush Script MT', cursive;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #666;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    /* Footer Styles */
+    .footer {
+      background: linear-gradient(90deg, #ff8c00, #ff0080); /* Same gradient as navbar */
+      color: #fff;
+      padding: 2rem 0;
+      text-align: center;
+      margin-top: auto;
+    }
+
+    .footer p {
+      margin: 0;
+    }
+
+    .footer p a {
+      color: #ffedcc; /* Link color */
+      text-decoration: none;
+    }
+
+    .footer p a:hover {
+      text-decoration: underline;
+    }
+
+    .footer .fab {
+      font-size: 2rem; /* Increased size for icons */
+      margin: 0 0.5rem;
+      color: #ffedcc; /* Icon color */
+      transition: color 0.3s;
+    }
+
+    .footer .fab:hover {
+      color: #fff; /* Icon hover color */
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Food Safari</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{% home %}">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% about %}">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% product %}">Products</a>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container content my-5">
+    <h1>Contact Us</h1>
+    <p>If you have any questions, feel free to reach out to us!</p>
+
+    <!-- Contact Form -->
+    <form>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-custom">Send Message</button>
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 Food Safari. All rights reserved.</p>
+    <p>
+      Follow us:
+      <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </p>
+  </footer>
+
+  <!-- jQuery and Bootstrap JS CDN -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

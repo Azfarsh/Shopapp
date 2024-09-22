@@ -1,0 +1,137 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    background-color: #343a40; /* Dark background */
+  }
+  
+  .navbar-brand {
+    font-size: 1.8rem; /* Larger font size for brand name */
+    font-weight: bold;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #f8f9fa; /* Light text color */
+    font-weight: 500;
+    padding: 0.5rem 1rem; /* Padding for better spacing */
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #e0e0e0; /* Slightly lighter on hover */
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/img/toggler-icon.svg");
+  }
+  
+  /* Main Content Styles */
+  .content {
+    flex: 1;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .carousel-inner {
+    overflow: hidden;
+  }
+  
+  .carousel-item {
+    padding: 2rem 0;
+  }
+  
+  .product-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .product-img {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .product-price {
+    font-size: 1.2rem;
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  .btn-custom {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .btn-custom:hover {
+    background-color: #0056b3;
+    color: #fff;
+  }
+  
+  /* Footer Styles */
+  .footer {
+    background-color: #343a40; /* Dark background */
+    color: #f8f9fa;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 1.5rem 0;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  
+  .footer a {
+    color: #f8f9fa; /* Light link color */
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    color: #e0e0e0; /* Slightly lighter on hover */
+  }
+  
+  .footer .fab {
+    font-size: 1.5rem; /* Larger icons */
+    margin: 0 0.5rem;
+  }
+  
+  .footer .text-white {
+    color: #fff;
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media (max-width: 768px) {
+    .navbar-nav .nav-link {
+      padding: 0.5rem 0.5rem;
+    }
+  
+    .product-card {
+      margin-bottom: 1rem;
+    }
+  
+    .product-img {
+      height: 150px;
+    }
+  }
+  
